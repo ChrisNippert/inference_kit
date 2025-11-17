@@ -15,6 +15,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/chrisnippert/inference_kit",
+    license="MIT",
     packages=find_packages(),
     python_requires=">=3.13",
     install_requires=requirements,
