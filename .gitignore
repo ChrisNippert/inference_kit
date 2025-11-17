@@ -20,30 +20,6 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual environments
-venv/
-ENV/
-env/
+.venv/
 
-# IDE
 .vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Models and data
-*.pt
-*.pth
-*.bin
-models/
-data/
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb

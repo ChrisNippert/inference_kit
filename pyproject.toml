@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inference_kit"
+version = "0.1.0"
+description = "Utility functions for working with causal language models"
+readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+  { name = "Chris Nippert", email = "contact@chrisnippert.com" },
+]
+
+# We're telling setuptools: "I'll define dependencies dynamically"
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+cpu = ["torch>=2.0.0"]
+cuda = ["torch>=2.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/chrisnippert/inference_kit"
+Source = "https://github.com/chrisnippert/inference_kit"
+"Issues" = "https://github.com/chrisnippert/inference_kit/issues"
+
+[tool.setuptools]
+# This replicates `packages=find_packages()` from your setup.py
+packages = { find = {} }
+
+[tool.setuptools.dynamic]
+# This replicates reading requirements from requirements.txt
+dependencies = { file = ["requirements.txt"] }
