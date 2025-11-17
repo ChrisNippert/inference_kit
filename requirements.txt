@@ -1,0 +1,5 @@
+# Note: Install PyTorch separately based on your system
+# See: https://pytorch.org/get-started/locally/
+
+transformers==4.57.1
+pandas==2.3.3
